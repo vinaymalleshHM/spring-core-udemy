@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- list of value -->
+	<bean name="hospital"
+		class="com.udemy.spring.springcore.list.Hospital">
+		<property name="name">
+			<value>Global Hospital</value>
+		</property>
+		<property name="departments">
+			<list>
+				<value>Front Office</value>
+				<value>In Patient</value>
+				<value>out Patient</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- if u have one value list tag is not mandatory -->
+	<!-- <bean name="hospital" class="com.udemy.spring.springcore.list.Hospital"> 
+		<property name="name"> <value>Global Hospital</value> </property> <property 
+		name="departments"> <list>optional if u have only one value <value>Front 
+		Office</value> </list> </property> </bean> -->
+
+	<!-- if doesn't have list -->
+	<!-- <bean name="hospital" class="com.udemy.spring.springcore.list.Hospital"> 
+		<property name="name"> <value>Global Hospital</value> </property> <property 
+		name="departments"> if u don't have any list <list> </list> </property> </bean> -->
+</beans> 
