@@ -10,11 +10,11 @@
 
 	<bean name="university"
 		class="com.udemy.spring.springcore.innerbeans.scope.Employee" p:id="123" scope="prototype">
-		<!-- <property name="address">
+		 <property name="address">
 			<bean
 				class="com.udemy.spring.springcore.innerbeans.scope.Address"
 				p:hNo="900" p:street="gff" p:city="gfh" />
-		</property> -->
+		</property> 
 	</bean>
 
 </beans> 
